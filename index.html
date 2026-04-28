@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VOID CULT</title>
+    <link rel="stylesheet" href="catalog.css">
+    <!-- Lenis & GSAP -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="nav-brand">VOID CULT</div>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="brand.html">Brand</a>
+        <a href="#catalog">Shop</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-grid" id="heroGrid">
+        <!-- Images injected via JS -->
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">VOID CULT</h1>
+        <p class="hero-subtitle">Code, Honor, Repeat</p>
+      </div>
+    </section>
+
+    <main class="catalog-shell" id="catalog">
+      <header class="catalog-header">
+        <p class="eyebrow">Featured Collection</p>
+        <h2>Product Catalog</h2>
+        <p class="intro">Streetwear pieces arranged by category with detail pages, image galleries, price placeholders, and editable buy links.</p>
+      </header>
+
+      <nav class="category-tabs" aria-label="Product categories">
+        <button class="category-tab is-active" type="button" data-category="all">All</button>
+        <button class="category-tab" type="button" data-category="t-shirts">T-shirts</button>
+        <button class="category-tab" type="button" data-category="hoodies">Hoodies</button>
+        <button class="category-tab" type="button" data-category="sweatshirts">Sweatshirts</button>
+      </nav>
+
+      <section class="product-grid" id="productGrid" aria-live="polite"></section>
+    </main>
+
+    <script src="products.js"></script>
+    <script src="catalog.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
